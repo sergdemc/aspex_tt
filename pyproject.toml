@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aspex-tt"
+version = "0.1.0"
+description = ""
+authors = ["Sergei Demchenko <hb13718@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.27.1"}
+asyncpg = "^0.29.0"
+sqlalchemy = "^2.0.28"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.23.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
